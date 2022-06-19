@@ -7,7 +7,7 @@ from django.db import models
 
 class Post(models.Model):
     Title = models.CharField(max_length=200)
-    Text = TextField('input text')
+    Text = models.TextField('Hello world')
     Author = get_user_model()
     Created_date = models.DateTimeField('date published')
     Published_date = models.DateTimeField('date published')
